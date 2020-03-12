@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: inherit;
+  background-color: forestgreen;
+  margin: 5px;
+  padding: 5px;
+}
+
+.playerX {
+  color: green;
+  font-weight: 900;
+  padding: 2px;
+}
+
+.playerO {
+  color: Red;
+  font-weight: 900;
+  padding: 2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: navajowhite;
+  font-size: 50px;
+  font-family: "Indie Flower", cursive;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  width: 400px;
+  height: 400px;
+  margin: 10px auto;
+}
+
+.title {
+  color: #16da37;
+  font-size: 40px;
+  font-family: "Bellota", cursive;
+  text-shadow: 1px 2px 1px black;
+}
+
+.message {
+  font-size: 22px;
+  font-family: "Bellota", cursive;
+}
+
+.highlight {
+  background-color: #547cff;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+@media (max-width: 425px) {
+  .board {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box {
+    font-size: 30px;
+  }
+}
